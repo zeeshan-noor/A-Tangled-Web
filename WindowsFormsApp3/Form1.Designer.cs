@@ -35,6 +35,7 @@
             this.landToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.checkTagsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,12 +75,14 @@
             // landToolStripMenuItem
             // 
             this.landToolStripMenuItem.Name = "landToolStripMenuItem";
-            this.landToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.landToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.landToolStripMenuItem.Text = "Load";
             this.landToolStripMenuItem.Click += new System.EventHandler(this.LandToolStripMenuItem_Click);
             // 
             // processToolStripMenuItem
             // 
+            this.processToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkTagsToolStripMenuItem});
             this.processToolStripMenuItem.Name = "processToolStripMenuItem";
             this.processToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.processToolStripMenuItem.Text = "Process";
@@ -91,6 +94,13 @@
             this.richTextBox1.Size = new System.Drawing.Size(512, 294);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
+            // 
+            // checkTagsToolStripMenuItem
+            // 
+            this.checkTagsToolStripMenuItem.Name = "checkTagsToolStripMenuItem";
+            this.checkTagsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkTagsToolStripMenuItem.Text = "Check Tags";
+            this.checkTagsToolStripMenuItem.Click += new System.EventHandler(this.CheckTagsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -119,6 +129,7 @@
         private System.Windows.Forms.ToolStripMenuItem landToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem processToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem checkTagsToolStripMenuItem;
     }
 }
 
